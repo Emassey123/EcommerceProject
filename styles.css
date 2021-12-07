@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+  }
+  header{
+    background-color: pink;
+    height: 5rem;
+    overflow: auto;
+  }
+  .nav-links{
+    float: left;
+    list-style-type: none;
+    
+  }
+   nav a{
+    padding: 2rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+  }
+  a:hover{
+    color: red;
+    background-color: black;
+  
+  }
+  body{
+    background-color: black;
+  }
+  .hero-container{
+    height: 50vh;
+    width: 100vw;
+    background-image: url('https://blog-assets.lightspeedhq.com/img/2021/03/e4bcf36b-blog_are-you-really-ready-to-open-an-ice-cream-shop_1200x628.jpg');/*('https://images.squarespace-cdn.com/content/v1/5ca7ad24809d8e73013f5e23/1572626233800-UYFLQSNZ9YDYURR93Q63/IMG_0596.jpg?format=1500w');*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+  }
+  .hero-container h1{
+  font-size: 8rem;
+  }
+  .about-image{
+    width: 30%;
+    float: left;
+    margin: 2rem 2rem 5rem 2rem;
+  }
+  .about-image-text{
+    max-width: 50%;
+    float: right;
+  }
+  .about-details{
+    color: white;
+    text-align: center;
+    margin: 2rem 4rem 5rem 2rem;
+    font-size: 2rem;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 10px pink;
+    padding: 5px 10px;
+    
+    
+  }
+  .deborah{
+    margin-top: 20px;
+    max-width: 80%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  @media (max-width:1000px){
+    .deborah{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width:800px){
+    .deborah{
+      grid-template-columns: 1fr;
+    }
+  }
+  .deborah-people-title{
+    text-align: center;
+    color: white;
+    margin: 5em;
+    font-size: 3em;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 50px 10px pink;
+    border-radius: 50px;
+    clear: both;
+  }
+  .deborah-people-item{
+    border: 1px solid white;
+    box-shadow: 10px 10px 10px pink;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .deborah-people-item-image{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  .deborah-people-item-image> .name{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  }
+  .deborah-people-item-image> .job-title{
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .deborah-people-item-image> .comment{
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  /*.catering-image{
+    width: 30%;
+    float: right;
+    margin: 2rem 2rem;
+  }
+  .catering-image-text{
+    max-width: 50%;
+    float: left;
+  }*/
+  .button{
+    background-color: pink;
+    color: black;
+    border: 1px solid white;
+    margin-top: 5rem;
+    margin-left: 17rem;
+    padding: 0.9375rem 1.875rem;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  p{
+    color:white;
+  }
+  
+  footer {
+    background: pink;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    clear: both;
+  }
+  .social {
+    color: white;
+    width: 25px;
+    height: 25px;
+  }
+  
