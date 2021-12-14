@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MannysTreatsAndSweets</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    <header>
-        <nav> 
+        <nav class="topnav" id="mytopnav"> 
           <ul>
             <li class='nav-links'><a href="index.html">Home</a></li>
              <li class='nav-links'><a href="treats.html">Treats</a></li>
-              <li class='nav-links'><a href="contact.html">Contact</a></li>
+              <li class='nav-links'><a href="contact.html" class="active">Contact</a></li>
                <li class="nav-links"><a href="cart.html">My Cart</a></li>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
           </ul>
         </nav>
       </header>

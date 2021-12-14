@@ -3,10 +3,15 @@
   margin:0;
   box-sizing: border-box;
 }
-header{
+/*header{
   background-color: pink;
   height: 5rem;
   overflow: auto;
+}*/
+.topnav{
+  overflow: hidden;
+  background-color: pink;
+  height: 5rem;
 }
 ul{
   display: flex;
@@ -29,7 +34,13 @@ ul{
 a:hover{
   color: red;
   background-color: black;
-
+}
+a .active{
+  background-color: white;
+  color:black;
+}
+.icon{
+  display: none;
 }
 body{
   background-color: black;
@@ -246,6 +257,7 @@ footer {
 /* Media Queries*/
 
 @media (min-width:601px) and (max-width:910px){
+  
   .grid{
     grid-template-columns: repeat(2, 1fr);
   }
