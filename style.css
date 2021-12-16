@@ -277,18 +277,18 @@ footer {
 
 /* Media Queries*/
 
-@media screen and (min-width:801px) and (max-width:1024px){
+@media screen and (max-width:1024px){
   .nav-ul{
     display:none;
     flex-direction: column;
     width:100%;
+    background-color:black;
   }
   .hamburger{
     display:block;
   }
   .nav-ul.show{
     display:flex;
-    z-index: 12;
   }
   .grid{
     grid-template-columns: repeat(2, 1fr);
@@ -312,6 +312,9 @@ footer {
   .about-image{
     width: 0%;
   }
+  button{
+    margin-left:6rem;
+  }
 
   footer p{
 font-size: 1rem;
@@ -331,6 +334,9 @@ font-size: 1rem;
   }
   .nav-ul.show{
     display:flex;
+  }
+  .about-details{
+    font-size:1rem;
   }
   .grid{
     grid-template-columns: 1fr;
@@ -357,6 +363,9 @@ font-size: 1rem;
  }
  .grid-title{
    font-size: 1rem;
+ }
+ button{
+   margin-left: 12rem;
  }
 }
 
