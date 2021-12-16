@@ -6,21 +6,22 @@
     <title>MannysTreatsAndSweets</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
   </head>
   <body>
       <header>
-        <nav class="topnav" id="mytopnav"> 
-          <ul>
-            <li class='nav-links'><a href="index.html" class="active">Home</a></li>
-             <li class='nav-links'><a href="treats.html">Treats</a></li>
-              <li class='nav-links'><a href="contact.html">Contact</a></li>
-              <li class="nav-links"><a href="cart.html">My Cart</a> </li>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
+        <nav> 
+          <a class="logo" href="index.html"><img class="logo-img" src="https://cdn3.iconfinder.com/data/icons/food-and-drink-color/64/fruit_ice_cream_tasty_ice_cold_summer_dessert-512.png" alt="My logo"></a>
+          <button class="hamburger" id="hamburger" aria-label="navigation menu" aria-expanded="undefined">
+          <i class="fa fa-bars"></i>
+        </button> 
+          <ul class="nav-ul" id="nav-ul">
+            <li><a href="index.html" class="active">Home</a></li>
+             <li><a href="treats.html">Treats</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="cart.html">My Cart</a></li>
             </ul>
         </nav>
-        
       </header>
       <section class="hero-container">
         <section class="hero-content">
@@ -83,6 +84,8 @@
 
         </section>
 
+        </main>
+
 
 
 
@@ -98,20 +101,11 @@
                   <a href="https://www.instagram.com">
               <img class="social" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_gray-512.png" alt="instagram">
             </a>
-            <p class="beef">Emmanuel &copy; Ninety's Replica Ice cream</p>
+            <p class="beef">Emmanuel &copy; Manny's Treats</p>
 
       </footer>
 
 
   </body>
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
+
 </html>

@@ -1,46 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
   padding: 0;
   margin:0;
   box-sizing: border-box;
 }
-/*header{
-  background-color: pink;
-  height: 5rem;
-  overflow: auto;
-}*/
-.topnav{
-  overflow: hidden;
-  background-color: pink;
-  height: 5rem;
+
+.logo{
+  font-size:1.5rem;
+  text-decoration:none;
+  color: white;
 }
-ul{
-  display: flex;
-  flex-direction: row;
+
+.logo-img{
+  width:5rem;
+  height:5rem;
+}
+
+nav{
+  background-color: pink;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center;
+  padding:1rem;
+}
+
+.nav-ul{
+  display:flex;
   align-items: center;
   justify-content: center;
+  padding:0;
+  list-style-type:none;
 }
-.nav-links{
-  list-style-type: none;
-  
-}
- nav a{
-  padding: 2rem;
-  display: block;
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-  text-align: center;
-}
-a:hover{
-  color: red;
-  background-color: black;
-}
-a .active{
-  background-color: white;
+
+.nav-ul li a{
+  display:inline-block;
   color:black;
+  padding:0.625rem 1.25rem;
+  margin:0 1rem;
+  text-decoration:none;
+  border: 0.125rem solid black;
+  border-radius: 1rem;
 }
-.icon{
-  display: none;
+
+.nav-ul li a:hover{
+  background-color:white;
+}
+
+.nav-ul li a.active{
+  background-color: white;
+}
+.hamburger{
+  background-color: transparent;
+  border: none;
+  color:white;
+  display:none;
+  cursor:pointer;
+  font-size:1.25rem;
+}
+
+.hamburger:focus{
+  outline:none;
 }
 body{
   background-color: black;
@@ -256,8 +277,19 @@ footer {
 
 /* Media Queries*/
 
-@media (min-width:601px) and (max-width:910px){
-  
+@media screen and (min-width:801px) and (max-width:1024px){
+  .nav-ul{
+    display:none;
+    flex-direction: column;
+    width:100%;
+  }
+  .hamburger{
+    display:block;
+  }
+  .nav-ul.show{
+    display:flex;
+    z-index: 12;
+  }
   .grid{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -280,10 +312,26 @@ footer {
   .about-image{
     width: 0%;
   }
+
+  footer p{
+font-size: 1rem;
+  }
   
 }
 
-@media (max-width:600px){
+@media screen and (max-width:800px){
+  .nav-ul{
+    display:none;
+    flex-direction: column;
+    width:100%;
+    background-color:black;
+  }
+  .hamburger{
+    display:block;
+  }
+  .nav-ul.show{
+    display:flex;
+  }
   .grid{
     grid-template-columns: 1fr;
     width:100%;
@@ -310,4 +358,11 @@ footer {
  .grid-title{
    font-size: 1rem;
  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-details{
+    font-size: 1rem;
+  }
+  
 }

@@ -1,0 +1,56 @@
+/*header{
+  background-color: pink;
+  height: 5rem;
+  overflow: auto;
+}
+.topnav{
+  overflow: hidden;
+  background-color: pink;
+  height: 5rem;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nav-links{
+  list-style-type: none;
+  
+}
+ nav a{
+  padding: 2rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+}
+a:hover{
+  color: red;
+  background-color: black;
+}
+a .active{
+  background-color: white;
+  color:black;
+}
+/*.main-nav{
+  background-color: pink;
+  position:fixed;
+  top:0;
+  left:0;
+  display:grid;
+  grid-template-columns: 1fr;
+  width:100%;
+  z-index:12;
+
+}
+.main-nav-container{
+  width:50%;
+}
+.main-nav-links{
+  float:right;
+}
+#mobile-toggle{
+  color:white;
+}*/
