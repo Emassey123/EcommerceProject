@@ -5,7 +5,9 @@
   margin:0;
   box-sizing: border-box;
 }
-
+html{
+  font-family: Montserrat;
+}
 .logo{
   font-size:1.5rem;
   text-decoration:none;
