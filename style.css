@@ -139,6 +139,7 @@ p{
   border-radius: 0.31rem;
   overflow: hidden;
   box-sizing: border-box;
+  margin: 0px auto;
 }
 
 .grid-item-image{
@@ -175,6 +176,7 @@ margin: 2.5rem;
   text-align: center;
   font-size:1.2rem;
   margin:1rem;
+  min-height: 1rem;
 
 }
 .grid-item> .price{
@@ -194,7 +196,6 @@ button{
   font-weight: bold;
   border-radius: 1rem;
   font-size: 16px;
-  margin:2rem 4rem;
 }
 /* Contact Page Styling*/
 
@@ -295,7 +296,7 @@ footer {
   .grid{
     grid-template-columns: repeat(2, 1fr);
   }
-    .chicken{
+    .about-section{
      display: none;
       width: 0;
   }
@@ -344,7 +345,7 @@ font-size: 1rem;
     grid-template-columns: 1fr;
     width:100%;
   }
-  .chicken{
+  .about-section{
     display: none;
      width: 0;
  }
